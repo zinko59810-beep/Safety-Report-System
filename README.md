@@ -1,114 +1,70 @@
-# SystemDev_TeamL
+# 災害安否報告システム (Disaster Safety Reporting System)
 
-## システム開発授業のためのリポジトリ
+## Overview
 
-本リポジトリはシステム開発授業のソースコード管理のためのリポジトリです。念のための履歴等管理用リポジトリとなります。基本的にはTeamsでのコード共有方針です。
+災害発生時に社員の安否状況を迅速に確認・管理するためのWebシステムです。
 
-## ディレクトリ構成
+社員は自身の安否情報を登録し、管理者は一覧画面から全社員の状況を確認できます。
 
-```
+## Features
 
-01_frontend
-  pages/
-    assets/
-    public/
-      admin_php（管理者用ページ）/
-        admin_menu.php(管理者用メニュー)
-        employee_list.php(社員一覧画面)
-        employee_detail.php(社員詳細画面)
-        safety_delete.php(安否情報削除)
-      safety_php(安否情報ページ)/
-        safety_register.php(安否登録画面)
-        safety_list.php(社員安否一覧画面)
-        safety_detail.php(安否詳細画面)
-      login.php(ログイン画面)
-    styles/
-      admin_css(管理者用ページ別CSS)/
-        admin_menu.css
-        employee_list.css
-        employee_detail.css
-        safety_delete.css
-      safety_css(安否情報ページ別CSS)/
-        safety_register.css
-        safety_list.css
-        safety_detail.css
-      login.css
-      reset.css(CSS表示の統一)
-      style.css(ベースのCSS)
-02_backend/
-03_db/
-README.md
+* ログイン機能
+* 社員一覧表示
+* 安否情報登録
+* 安否情報詳細表示
+* 管理者メニュー
+* データベース連携
 
-```
+## Tech Stack
 
-## システム機能一覧と実装目安について
+* PHP
+* MySQL
+* HTML
+* CSS
+* Bootstrap
+* Apache
 
-### 技術スタック（予定）
+## Database
 
-| **技術名**    | **内容**               |
-| ---------- | -------------------- |
-| HTML       | 表示処理                 |
-| CSS        | スタイリング               |
-| JavaScript | 動的なWebサイト作成（必要に応じて）  |
-| PHP        | データベースとの連携、サーバーサイド処理 |
-| MySQL      | データベース               |
+主なテーブル
 
-## システム構成
+* employee
+* department
+* auth
+* safety
 
-```mermaid
+## My Role
 
-flowchart TB
+* データベース設計
+* PHPバックエンド開発
+* 画面設計
+* CRUD機能実装
+* UI改善
 
-subgraph user[ユーザ]
+## Screenshots
 
-	subgraph user1 [安否報告者]
-		phone[スマートフォンなど]
-	end
-	
-	subgraph user2 [安否確認者]
-		device[各種デバイス]
-	end
-	
-end
+### Login Screen
 
+(画像を追加)
 
+### Employee List Screen
 
-internet[インターネット]
+(画像を追加)
 
-subgraph system [災害安否報告システム]
+### Safety Detail Screen
 
-	subgraph server ["Webサーバー(Apache)"]
-	
-		php["サーバーサイド(PHP)"]
-		
-		end
-	dbserver["DBサーバ(MySQL)"]
-	
-	end
-	
-user1 --> internet
-internet --> server
-server --> dbserver
-dbserver --> server
-server --> internet
-internet --> user2
+(画像を追加)
 
-user ~~~ system
+## Learning Points
 
+* PHPとMySQLを利用したWebシステム開発
+* セッション管理によるログイン認証
+* データベース設計とSQL操作
+* チーム開発でのGit/GitHub利用
 
-```
+## Future Improvements
 
-## フォントについて
-
-念のために可読性を重視したUD（ユニバーサルデザイン）フォントに統一しています。
-
-フォントの太さについて
-
-通常（Regular）：font-weight: 400;
-
-太字（Bold）:font-weight: 700;
-
-となっています。
-
-フォントに関しては、表示の差異が出るのを避けるため、ttfファイルをディレクトリ内に同梱して設定しています。
-
+* メール通知機能
+* CSV出力機能
+* 管理者権限の強化
+* レスポンシブデザイン改善

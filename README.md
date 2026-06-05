@@ -68,3 +68,16 @@
 * CSV出力機能
 * 管理者権限の強化
 * レスポンシブデザイン改善
+
+
+## Screenshots
+
+### Login Screen
+![Login](./01_frontend/images/スクリーンショット%202026-06-05%20144014.png)
+
+### Employee List
+![Employee List](./01_frontend/images/スクリーンショット%202026-06-05%20144941.png)
+
+### Safety Detail Screen
+![Detail](./01_frontend/images/スクリーンショット%202026-06-05%20144259.png)
+

@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.question {
+    justify-content: center;
+    line-height: 60px;
+    display: flex;
+    font-size: 30px;
+}
+
+.buttom {
+    text-align: center;
+    font-size: 30px;
+}
+
+.comment {
+    text-align: left;
+    margin-left: 5%;
+}
+
+#submit {
+    margin-top: 30px;
+    font-size: 30px;
+    background-color: #FF7373;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+/* スマートフォン用のスタイル */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 100%;
+    }
+
+    .question {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .buttom {
+        font-size: 11px;
+    }
+
+    #submit {
+        font-size: 11px;
+        border-radius: 10px;
+    }
+    
+}

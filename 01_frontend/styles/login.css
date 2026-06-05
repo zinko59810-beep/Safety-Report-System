@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+ 
+.form-group {
+    color: #4A3F53;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+ 
+.form-input {
+    font-size: 30px;
+}
+ 
+.login-button {
+    text-align: center;
+}
+ 
+#submit {
+    font-size: 20px;
+    background-color: #80C7F4;
+    padding: 8px;
+    border-radius: 15px;
+}

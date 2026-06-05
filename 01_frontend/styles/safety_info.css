@@ -1,0 +1,82 @@
+.main {
+    padding-top: 35px;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.safety-card {
+    min-height: 300px;
+    background: #fff;
+}
+
+.safety-btn-area {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.safety-btn {
+    width: 260px;
+    height: 85px;
+    border-radius: 18px;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.safety-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.safe-btn {
+    background: #edf8ef;
+    border: 3px solid green;
+    color: green;
+}
+
+.safe-btn:hover {
+    background: green;
+    color: white;
+}
+
+.unsafe-btn {
+    background: #fff1f1;
+    border: 3px solid red;
+    color: red;
+}
+
+.unsafe-btn:hover {
+    background: red;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .page-title {
+        font-size: 24px;
+    }
+
+    .safety-btn-area {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .safety-btn {
+        width: 230px;
+        height: 75px;
+        font-size: 26px;
+    }
+}
+.main {
+    min-height: calc(100vh - 80px);
+    margin-top: -120px;
+}

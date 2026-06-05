@@ -1,0 +1,89 @@
+/*
+社員一覧画面
+*/
+
+body {
+    font-family: "Yu Gothic", "Meiryo", sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* 
+ログアウトボタン
+ */
+
+.logout-btn {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.list-section {
+    width: 70%;
+    max-width: 800px;
+    margin: 100px auto;
+
+}
+
+.list-header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+ /* <!-------------- employee テーブル -------------------------------> */
+.employee-table {
+    width: 100%;
+    border-collapse:collapse;
+    background-color: #ffffff;
+}
+
+.employee-table th{
+    font-size:small;
+    border: 1px solid #777;
+     padding: 10px 10px;
+    text-align: center; 
+}
+
+.employee-table td {
+    font-size:small;
+    border: 1px solid #777;
+     padding: 20px 60px;
+    text-align: center; 
+}
+
+.employee-table th {
+    background-color: #084386;
+    color: white;
+}
+.filter-btn,
+.back-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    font-size: 14px;
+    background-color:rgb(121, 119, 119);
+    color: white;
+}
+
+ /* <!-------------- employee テーブル -------------------------------> */
+
+ /* <!-------------- 戻るボタン --------------------------------------> */
+
+.back-btn {
+    background-color:rgb(121, 119, 119);
+    color:white;
+    margin-top: 24px;
+}
+.filter-btn:hover{
+    background-color: rgb(87, 81, 81);
+}
+.back-btn:hover{
+    background-color: rgb(87, 81, 81);
+}
+ /* <!-------------- 戻るボタン --------------------------------------> */

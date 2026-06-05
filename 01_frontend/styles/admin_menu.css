@@ -1,0 +1,19 @@
+/* 
+<!-- 管理者用メニュー画面 -->
+*/
+
+.menu-btn{
+    transition: all 0.2s ease;
+}
+
+/* カーソル乗せたら少し浮く */
+.menu-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+}
+
+/* クリックしたら押される感じ */
+.menu-btn:active{
+    transform: scale(0.96);
+}
+
